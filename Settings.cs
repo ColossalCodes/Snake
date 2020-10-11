@@ -32,7 +32,7 @@
         {
             Width = 16;
             Height = 16;
-            //Speed = 16;
+            //Speed = 16; Set else where[StartScreen]!
             Score = 0;
             Points = 100;
             GameOver = false;
