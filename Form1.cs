@@ -21,7 +21,7 @@ namespace Snake
 
         public Form1()   
             /*You left off after finishing seperate controls, now need to*******
-                                                         ******implement boundary and gameover correctly on 2P game mode */
+            ******implement boundary and gameover correctly on 2P game mode */
         {
             InitializeComponent();
 
@@ -29,7 +29,7 @@ namespace Snake
             new Settings();
 
             //Initalsie my sound files
-            //_soundPlayer = new SoundPlayer("introSound.wav");
+            _soundPlayer = new SoundPlayer("introSound.wav");
 
             //Set game speed and start timer
             gameTimer.Interval = 1000 / Settings.Speed;
