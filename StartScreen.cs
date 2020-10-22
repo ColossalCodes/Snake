@@ -30,7 +30,7 @@ namespace Snake
         public StartScreen()
 
         {
-            Directory.SetCurrentDirectory(@"C:\Users\Marcus\Desktop\LaptopBackup\Progs C# + HTML - Copy\Snake2P");//need to make this a dynamic directory
+            Directory.SetCurrentDirectory(@"C:\Users\Marcus\source\repos\ColossalCodes\Snake");//need to make this a dynamic directory
             InitializeComponent();
             _soundPlayer = new SoundPlayer("introSound.wav");
             _soundPlayer.Play();
