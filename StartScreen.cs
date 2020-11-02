@@ -33,7 +33,7 @@ namespace Snake
             Directory.SetCurrentDirectory(@"C:\Users\Marcus\source\repos\ColossalCodes\Snake");//need to make this a dynamic directory
             InitializeComponent();
             _soundPlayer = new SoundPlayer("introSound.wav");
-            _soundPlayer.Play();
+            _soundPlayer.PlayLooping();
         }
 
         private void StartScreen_Load(object sender, EventArgs e)
@@ -72,11 +72,18 @@ namespace Snake
                 Settings.Play2PMode = false;
 
             //THEN...
+            string check = "0";
+            int ccheck = 0;
+            bool test = ccheck.Equals(check);
+            Console.WriteLine(test);
+            Console.ReadLine();
 
             th = new Thread(SnakeForm);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
             this.Hide();
+
+            
         }
 
         private void Label1_Click(object sender, EventArgs e)
